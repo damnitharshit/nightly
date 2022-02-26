@@ -1,0 +1,63 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Customize */
+
+    /* background-image: url("path/to/image") */
+    background-image: url("images/01.jpg");
+
+    /* color: your color */
+    color: #fff;
+
+    /* font-family: 'your font' */
+    font-family: 'fira code';
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px); 
+    border-radius: 10px; 
+}
+
+#greeting{
+    margin-top: 2vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#time {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 10vw;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.46);
+}
+
+#bookmarks {
+    margin-top: 0;
+    padding: 0%;
+    margin-bottom: 2vw;
+    list-style-type: none;
+    text-align: center;
+}
+
+#bookmarks li {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#bookmarks li:hover {
+    transform: scale(1.2);
+}
+
+#bookmarks img {
+    width: 3vw;
+}
