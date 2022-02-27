@@ -16,6 +16,8 @@ A themed, minimal start page for web browsers.
 - Download [New Tab Override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/).
 - Go to Extension settings and add path to index.html as Redirect URL. for example, `file://path/to/file/index.html`
 
+NOTE: The blur effect in this project is applied with [this CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) which isn't enabled by default in firefox. Follow the steps on [this guide](https://dev.to/snkds/how-to-enable-backdrop-filter-in-firefox-2n8e) to enable it manually and the blur should work fine. 
+
 ## Previews
 <p align="center">
 <img src="preview/01.jpg" width=500/>
