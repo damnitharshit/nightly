@@ -22,7 +22,7 @@ body {
 
 .content {
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px); 
+    backdrop-filter: blur(3px);
     border-radius: 10px; 
 }
 
