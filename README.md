@@ -1,5 +1,5 @@
 <p align="center">
-<img src="logo.svg" />
+<img src="logo.svg" width="300"/>
 </p>
 
 A minimal and configurable start page for the web browser of your choice.
