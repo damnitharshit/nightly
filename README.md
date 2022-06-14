@@ -1,8 +1,5 @@
 <p align="center">
-<img src="logo.svg" width="300"/>
-
-
-<img src="preview.png" width="500">
+<img src="logo.svg" width="200"/>
 </p>
 
 A minimal and configurable start page for the web browser of your choice.
@@ -24,3 +21,8 @@ A minimal and configurable start page for the web browser of your choice.
 - Go to Extension settings and set `https://damnitharshit.github.io/nightly/` as Redirect URL.
 
 NOTE : The blur effect in this project is applied with [this CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) which isn't enabled by default in firefox. Follow the steps on [this guide](https://dev.to/snkds/how-to-enable-backdrop-filter-in-firefox-2n8e) to enable it manually and the blur should work fine. 
+
+## Preview
+<p align="center">
+<img src="preview.png" width="600">
+</p>
