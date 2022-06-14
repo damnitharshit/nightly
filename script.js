@@ -1,5 +1,3 @@
-setInterval(displayClock, 100);
-
 function displayClock() {
     const time = document.querySelector('#time');
     let date = new Date();
@@ -16,3 +14,12 @@ function displayClock() {
     }
     time.textContent = hrs + ':' + min;
 }
+
+function setRandomKaomoji() {
+    const kaomoji = document.querySelector('#kaomoji');
+    const kaomojis = ['(⌐■_■)', '|ಠ_ಠ|', '＼(⌒▽⌒)', '(⊙▂⊙)'];
+    kaomoji.innerHTML = kaomojis[Math.floor(Math.random()*kaomojis.length)];
+}
+
+setInterval(displayClock, 100)
+window.onload = setRandomKaomoji;
