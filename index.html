@@ -10,24 +10,69 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     
-    <!-- Load Fonts-->
+    <!-- Load Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Code:b"> 
+
+    <!-- Load Charset and set correct viewport -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-    <div class="content">
+    <div id="apexContainer">
 
-        <div id="kaomoji"></div>
+        <div id="headingContainer">(⌐■_■)</div>
 
-        <div id="time">00:00</div>
+        <div id="clockContainer">00:00</div>
         
-        <ul id="bookmarks">
-             <!-- Add bookmarks here -->
-            <li><a href="https://github.com"><img src="assets/github.svg"></a></li>
-            <li><a href="https://youtube.com"><img src="assets/youtube.svg"></a></li>
-            <li><a href="https://web.whatsapp.com"><img src="assets/whatsapp.svg"></a></li>
+        <ul id="bookmarksContainer">
+            <div class="bookmark" id="b1"><a href="https://github.com" id="aB1"><img src="assets/github.svg" id="imgB1"></a></div>
+            <div class="bookmark" id="b2"><a href="https://web.whatsapp.com" id="aB2"><img src="assets/whatsapp.svg" id="imgB2"></a></div>
+            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img src="assets/youtube.svg" id="imgB3"></a></div>
+            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img src="assets/gmail.svg" id="imgB4"></a></div>
+            <div class="bookmark" id="b5"><img src="assets/settings.svg"></div>
         </ul>
+
+        <div id="settingsContainer" style="display: none;">
+
+            <div id="categoryContainer">
+                <button class="button" id="headingSettingCategory">HEADING</button>
+                <button class="button" id="clockSettingCategory">CLOCK</button>
+                <button class="button" id="bookmarkSettingCategory">BOOKMARKS</button>
+                <button class="button" id="generalSettingCategory">GENERAL</button>
+            </div>
+            
+            <div id="headingSettingsContainer" style="display: grid;">
+                <div>Content <input type="text" class="inputField" id="headingContentSetting" value="(⌐■_■)"></div>
+                <div>Color <input type="text" class="inputField" id="headingColorSetting" value="#FFF"></div>
+                <div>Font <input type="text" class="inputField" id="headingFontSetting" value="Fira Code"></div>
+                <div>Font Size <input type="range" class="inputRange" id="headingFontSizeSetting" min="1" max="10" value="2"></div> 
+            </div>
+            
+            <div id="clockSettingsContainer" style="display: none;">
+                <div>Color <input type="text" class="inputField" id="clockColorSetting" value="#FFF"></div>
+                <div>Font <input type="text" class="inputField" id="clockFontSetting" value="Fira Code"></div>
+                <div>Font Size <input type="range" class="inputRange" id="clockFontSizeSetting"  min="1" max="20" value="10"></div>
+                <div>Line Height <input type="range" class="inputRange" id="clockLineHeightSetting"  min="1" max="20" value="12"></div>
+            </div>
+            
+            <div id="bookmarkSettingsContainer" style="display: none;">
+                <div style="display: flex;">
+                    <div style="width: 60%;text-align: center;">Icon</div>
+                    <div style="width: 60%;text-align: center;">Link</div>
+                </div>
+                <div>b1 <input type="text" class="inputField" id="imgB1Setting" style="width: 40%;" value="assets/github.svg"> <input type="text" class="inputField" id="aB1Setting" style="width: 40%;" value="https://github.com"></div>
+                <div>b2 <input type="text" class="inputField" id="imgB2Setting" style="width: 40%;" value="assets/whatsapp.svg"> <input type="text" class="inputField" id="aB2Setting" style="width: 40%;" value="https://web.whatsapp.com"></div>
+                <div>b3 <input type="text" class="inputField" id="imgB3Setting" style="width: 40%;" value="assets/youtube.svg"> <input type="text" class="inputField" id="aB3Setting" style="width: 40%;" value="https://youtube.com"></div>
+                <div>b4 <input type="text" class="inputField" id="imgB4Setting" style="width: 40%;" value="assets/gmail.svg"> <input type="text" class="inputField" id="aB4Setting" style="width: 40%;" value="https://gmail.com"></div>
+            </div>
+            
+            <div id="generalSettingsContainer" style="display: none;">
+                <div>Background <input type="text" class="inputField" id="generalBackgroundSetting" value="assets/calvin.jpg"></div>
+                <div>Blur Intensity <input type="range" class="inputRange" id="generalBlurIntensitySetting" min="1" max="15" value="5"></div>
+            </div>
+
+        </div>
 
     </div>
 </body>

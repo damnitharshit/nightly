@@ -7,12 +7,6 @@ A minimal and configurable start page for the web browser of your choice.
 ## Installation
 
 ### For Chromium-based browsers
-- Clone this repository with `git clone https://github.com/Harshit-T/nightly.git`.
-- Download [New Tab Redirect](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna).
-- Go to Extension settings and add path to index.html as Redirect URL. for example, `file://path/to/file/index.html`
-
-**OR**
-
 - Download [New Tab Redirect](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna).
 - Go to extension settings and set `https://damnitharshit.github.io/nightly/` as Redirect URL.
 
