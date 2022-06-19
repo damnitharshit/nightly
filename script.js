@@ -94,7 +94,7 @@ function main() {
         localStorage.setItem("clockColor", newValue);
     }
     clockFontSetting.oninput = function() {
-        newValue = clockColorSetting.value;
+        newValue = clockFontSetting.value;
         clockContainer.style.fontFamily = newValue;
         localStorage.setItem("clockFont", newValue);
     }
