@@ -27,7 +27,7 @@ function main() {
     headingFontSizeSetting = document.querySelector("#headingFontSizeSetting");
 
     // load User Prefs
-    if (localStorage.getItem("headingContent" != null)) {
+    if (localStorage.getItem("headingContent") != null) {
         headingContainer.innerHTML = headingContentSetting.value = localStorage.getItem("headingContent");
     }
     if (localStorage.getItem("headingColor") != null) {
