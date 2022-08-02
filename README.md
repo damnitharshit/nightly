@@ -20,10 +20,10 @@ NOTE : The blur effect in this project is applied with [this CSS property](https
 
 ### How do I change the settings?
 Let's take the example of changing the background :
-- You go on the internet, find an image and download it such that its path is `/home/myusername/Downloads/myimg.png`.
+- You go on the internet, find an image that has a link like `https://example.com/bg.jpg`
 - You open [our site](https://damnitharshit.github.io/nightly/) and click on the settings icon.
 - You click on the button labelled `GENERAL`.
-- You enter `/home/myusername/Downloads/myimg.png` in the field under the label `Background`.
+- You enter `https://example.com/bg.jpg` in the field under the label `Background`.
 
 ..and that's it! The image would have been applied to the background, and it'll stay that way until you clear your browser cache or move the image to another place.
 

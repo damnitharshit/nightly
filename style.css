@@ -13,8 +13,17 @@ body {
     border-radius: 15px;
     backdrop-filter: blur(5px);
     background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 10px 90px rgba(0, 0, 0, 1);
-    transition: 0.2s;
+    box-shadow: 0px 0px 90px rgba(0, 0, 0, 1);
+    animation: apexContainerAnimation 200ms ease-in-out 0s 1;
+}
+
+@keyframes apexContainerAnimation {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 #headingContainer {
@@ -58,6 +67,16 @@ body {
     color: #fff;
     display: grid;
     grid-template-rows: 0.1fr 1fr;
+    animation: settingsAnimation 100ms linear 0s 1;
+}
+
+@keyframes settingsAnimation {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 #categoryContainer {
